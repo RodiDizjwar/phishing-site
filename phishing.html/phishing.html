@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inloggen bij SocialConnect</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: space-between;
+        }
+
+        .top-balk {
+            background-color: #ffffff;
+            padding: 12px 30px;
+            border-bottom: 1px solid #dddfe2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-balk a {
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+            margin-left: 15px;
+        }
+
+        .hoofd-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            padding: 40px 20px;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        .intro-tekst {
+            max-width: 450px;
+        }
+
+        .merk-logo {
+            color: #1877f2;
+            font-size: 52px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .intro-tekst p {
+            font-size: 24px;
+            color: #1c1e21;
+            line-height: 1.3;
+        }
+
+        .login-kaart {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 380px;
+            text-align: center;
+        }
+
+        .login-kaart form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-kaart input {
+            padding: 14px 16px;
+            margin-bottom: 12px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .btn-inloggen {
+            background-color: #1877f2;
+            color: #ffffff;
+            border: none;
+            padding: 14px;
+            border-radius: 6px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .btn-inloggen:hover {
+            background-color: #166fe5;
+        }
+
+        .wachtwoord-vergeten {
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .lijn {
+            border-bottom: 1px solid #dadde1;
+            margin-bottom: 20px;
+        }
+
+        .btn-nieuw-account {
+            background-color: #42b72a;
+            color: #ffffff;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 6px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            align-self: center;
+        }
+
+        footer {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            color: #737373;
+            font-size: 12px;
+            border-top: 1px solid #dddfe2;
+        }
+
+        @media (max-width: 800px) {
+            .hoofd-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="top-balk">
+        <strong>Educatieve Demo - Phishing Bewustwording</strong>
+        <nav>
+            <a href="#">Helpcentrum</a>
+            <a href="#">Beveiliging</a>
+            <a href="#">Privacy</a>
+        </nav>
+    </header>
+
+    <main class="hoofd-container">
+        <div class="intro-tekst">
+            <div class="merk-logo">facebook</div>
+            <p>Maak contact met vrienden en de wereld om je heen.</p>
+        </div>
+
+        <div class="login-kaart">
+            <form action="#" method="post">
+                <input type="text" name="gebruiker" placeholder="E-mailadres of telefoonnummer" required>
+                <input type="password" name="wachtwoord" placeholder="Wachtwoord" required>
+                <button type="submit" class="btn-inloggen">Aanmelden</button>
+                <a href="#" class="wachtwoord-vergeten">Wachtwoord vergeten?</a>
+                <div class="lijn"></div>
+                <button type="button" class="btn-nieuw-account">Nieuw account maken</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Let op: Dit is een schoolopdracht voor MBO Software Development en geen echte inlogpagina.</p>
+    </footer>
+
+</body>
+</html>
